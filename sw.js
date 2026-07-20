@@ -1,4 +1,4 @@
-const CACHE = 'cnps-formation-v1';
+const CACHE = 'cnps-formation-v2';
 const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', (e) => {
