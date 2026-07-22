@@ -399,8 +399,7 @@
     <div class="card hero">
       <div class="flag-strip"></div>
       <h2>Bienvenue dans votre école de la protection sociale 🇬🇳</h2>
-      <p>Cette application vous forme aux <strong>fondements de la protection sociale et de la sécurité sociale</strong> : origines et modèles historiques (Bismarck, Beveridge), naissance de la sécurité sociale moderne, et les organisations internationales et régionales — <strong>OIT, AISS et CIPRES</strong>.</p>
-      <p class="muted">Les modules consacrés à la <strong>CNPS Guinée</strong> (institution, prestations, procédures) seront ajoutés prochainement.</p>
+      <p>Cette application vous forme aux <strong>fondements de la protection sociale</strong> (origines, modèles de Bismarck et Beveridge, OIT, AISS, CIPRES) et au fonctionnement complet de la <strong>Caisse Nationale de Prévoyance Sociale (CNPS)</strong> de la République de Guinée : institution, missions, champ d'application, financement et prestations servies.</p>
       <p class="muted">Aucune connexion internet n'est nécessaire : cours, quiz et assistant fonctionnent entièrement hors-ligne. Votre progression est enregistrée sur cet appareil.</p>
       <div class="stats-grid">
         <div class="stat-box"><div class="big" id="statLessons">0/0</div><div class="lbl">Leçons lues</div></div>
@@ -529,6 +528,78 @@ let knowledge = {
   "cipres": {
     tag: "CIPRES",
     answer: "La <strong>CIPRES</strong> (Conférence Interafricaine de la Prévoyance Sociale) est la principale organisation régionale de <strong>régulation, de contrôle et de coopération</strong> en matière de sécurité sociale en Afrique francophone. <ul><li>Créée par le <strong>Traité d'Abidjan du 21 septembre 1993</strong>, entré en vigueur en <strong>1995</strong> ;</li><li>Siège à <strong>Lomé</strong> (Togo) ;</li><li><strong>17 États membres</strong>, dont la <strong>Guinée</strong> ;</li><li>Objectifs : harmoniser les législations, renforcer la gouvernance, garantir la viabilité financière, améliorer la qualité des prestations, développer la coopération régionale ;</li><li>Ses <strong>actes ont une portée juridique</strong> dans les États membres (contrairement aux lignes directrices de l'AISS).</li></ul>La CNSS et la CNPS de Guinée s'inspirent de ses actes et référentiels."
+  },
+  "cnps_presentation": {
+    tag: "CNPS Guinée",
+    answer: "La <strong>Caisse Nationale de Prévoyance Sociale (CNPS)</strong> a été créée par le <strong>décret 0263 du 31 mai 2022</strong>, suite à la <strong>fusion</strong> de la Caisse Nationale de Prévoyance Sociale des Agents de l'État (<strong>CNPSAE</strong>) et de l'Institut National d'Assurance Maladie Obligatoire (<strong>INAMO</strong>). C'est un <strong>établissement public administratif</strong> doté de la <strong>personnalité morale</strong> et jouissant de l'<strong>autonomie financière et de gestion</strong>. Elle est placée sous la <strong>tutelle technique du Ministère chargé de la protection sociale</strong> et sous la <strong>tutelle financière du Ministère chargé des finances</strong>."
+  },
+  "cnps_organisation": {
+    tag: "CNPS Guinée",
+    answer: "L'organisation administrative de la CNPS repose sur deux organes :<ul><li><strong>Un Conseil d'Administration</strong> — l'organe de <strong>supervision, d'orientation et de décision</strong> ;</li><li><strong>Une Direction Générale</strong> — l'organe d'<strong>exécution</strong>.</li></ul>"
+  },
+  "cnps_missions": {
+    tag: "CNPS Guinée",
+    answer: "La CNPS a pour mission de <strong>couvrir les agents de l'État et assimilés</strong>, en activité et à la retraite, <strong>ainsi que leurs ayants droit, contre les risques sociaux</strong>. À ce titre, elle est principalement chargée de gérer :<ul><li>La branche des <strong>pensions de vieillesse, d'invalidité et de survivants</strong> ;</li><li>La branche des <strong>risques professionnels</strong> ;</li><li>La branche des <strong>prestations familiales</strong> ;</li><li>La branche <strong>maladie</strong>.</li></ul>La CNPS peut recevoir du Gouvernement toute autre mission en rapport avec son domaine d'activité."
+  },
+  "cnps_champ": {
+    tag: "CNPS Guinée",
+    answer: "La CNPS couvre les catégories de personnes suivantes :<ul><li>Les <strong>Fonctionnaires de l'État</strong> et leurs ayants droit ;</li><li>Les <strong>Contractuels de l'État</strong> et leurs ayants droit ;</li><li>Les <strong>fonctionnaires des Collectivités locales</strong> et leurs ayants droit ;</li><li>Les <strong>Retraités</strong>.</li></ul>"
+  },
+  "cnps_financement": {
+    tag: "CNPS Guinée",
+    answer: "Les prestations servies par la CNPS sont financées par :<ul><li>Les <strong>cotisations obligatoires</strong> des fonctionnaires, des contractuels et des retraités ;</li><li>Les <strong>cotisations obligatoires des collectivités locales</strong> ;</li><li>Les <strong>cotisations obligatoires de l'État employeur</strong> ;</li><li>Les <strong>dons et legs</strong> ;</li><li>Les <strong>majorations et intérêts moratoires</strong> encourus pour retard dans le versement des cotisations ;</li><li>Éventuellement, les <strong>subventions</strong> et contributions exceptionnelles au titre du budget général de l'État, et toutes autres ressources attribuées par un texte législatif ou réglementaire ;</li><li>Les <strong>revenus des placements</strong>.</li></ul>"
+  },
+  "pension_vieillesse": {
+    tag: "CNPS · Pensions",
+    answer: "Tout affilié à la CNPS a droit à une <strong>pension de retraite</strong> dans les conditions suivantes :<ul><li>Avoir <strong>atteint la limite d'âge</strong> de sa hiérarchie ou de son grade ;</li><li>Avoir totalisé <strong>au moins 15 ans d'activité soumise à cotisation</strong> à la CNPS ;</li><li>Avoir <strong>cessé toute activité salariée</strong> au sein de la fonction publique.</li></ul>La jouissance du droit à pension est acquise pour l'agent civil lorsque la <strong>cessation définitive d'activité</strong>, la <strong>cotisation de quinze ans</strong> et l'<strong>âge limite</strong> fixé pour le départ à la retraite sont remplis. Les conditions de cessation définitive d'activité sont fixées par le régime juridique applicable à l'assuré."
+  },
+  "pension_calcul": {
+    tag: "CNPS · Pensions",
+    answer: "Le montant de la pension de retraite <strong>n'est pas fixe</strong> : il varie en fonction de l'<strong>indice</strong> et de la <strong>durée de l'emploi</strong>. Il est calculé sur la base de : <ul><li>L'<strong>indice</strong> ;</li><li>La <strong>valeur du point d'indice</strong> ;</li><li>Le <strong>taux d'accumulation</strong> et le nombre d'années de service.</li></ul>La formule est la suivante :<div class=\"kb-block\" style=\"text-align:center;font-weight:700\">Pension = Indice × valeur du point d'indice × taux d'accumulation</div>"
+  },
+  "allocations_retraite": {
+    tag: "CNPS · Pensions",
+    answer: "Le retraité peut recevoir, <strong>en plus de sa pension</strong>, des <strong>allocations familiales</strong> pour ses enfants <strong>nés ou conçus avant le début de sa retraite</strong>. Ces allocations sont accordées pour un maximum de <strong>10 enfants</strong>. Elles sont versées jusqu'aux <strong>18 ans</strong> de l'enfant, ou jusqu'à <strong>21 ans</strong> s'il est en apprentissage, poursuit ses études ou est en situation d'invalidité. Leur montant est le <strong>même</strong> que celui des allocations familiales versées aux agents en activité."
+  },
+  "pension_invalidite": {
+    tag: "CNPS · Pensions",
+    answer: "Est considéré comme <strong>invalide</strong> tout assuré dont la <strong>capacité de travail ou de gain est réduite</strong>, après un accident ou une maladie d'<strong>origine non professionnelle</strong>. Un assuré devenu définitivement inapte au travail après un congé de longue durée peut bénéficier d'une <strong>pension d'invalidité</strong> s'il ne remplit pas encore les conditions d'âge et de durée de cotisation pour la retraite. Il doit avoir cotisé <strong>au moins 5 ans</strong> auprès de la CNPS. Le début de l'incapacité doit survenir <strong>au cours de l'activité professionnelle</strong>. La pension prend effet le <strong>premier jour du mois suivant la cessation définitive d'activité</strong>. Elle <strong>ne se cumule pas</strong> avec une rémunération d'activité ou une pension de retraite : elle est remplacée par une pension de retraite de même montant à l'âge de départ à la retraite."
+  },
+  "pension_survivants": {
+    tag: "CNPS · Pensions",
+    answer: "La <strong>pension de survivants</strong> est une prestation allouée aux <strong>conjoint(e)s et/ou ayants droit</strong> de l'assuré qui, au moment de son décès, bénéficiait d'une pension de vieillesse ou d'invalidité, ou remplissait les conditions requises pour en bénéficier.<br><br><strong>Pension de conjoint(e) survivant(e)</strong> : le conjoint survivant a droit à une <strong>pension de réversion égale à 50 %</strong> de la pension de retraite obtenue (ou qu'aurait obtenue) l'assuré décédé, augmentée le cas échéant de la <strong>moitié de la rente d'invalidité</strong> dont il bénéficiait ou aurait pu bénéficier."
+  },
+  "pension_orphelin": {
+    tag: "CNPS · Pensions",
+    answer: "En cas de décès du conjoint survivant, <strong>les enfants du de cujus sans exception</strong> ont droit à une <strong>pension d'orphelin</strong> jusqu'à l'âge de <strong>18 ans révolus</strong>, et <strong>21 ans</strong> si l'enfant est placé en apprentissage, poursuit des études ou est en état d'infirmité.<ul><li>La pension d'orphelin est égale à <strong>10 %</strong> de la pension à laquelle avait droit (ou aurait eu droit) l'agent de l'État ou retraité décédé ;</li><li>Le <strong>total des pensions d'orphelins</strong> versées ne peut <strong>excéder le montant de la pension du défunt</strong> ;</li><li>Si le nombre d'ayants droit est <strong>supérieur à dix</strong>, la pension de chacun est <strong>réduite proportionnellement</strong>.</li></ul>"
+  },
+  "risques_professionnels": {
+    tag: "CNPS · Risques professionnels",
+    answer: "Les <strong>risques professionnels</strong> sont constitués des <strong>accidents du travail</strong> et des <strong>maladies professionnelles</strong>. Est considéré comme accident du travail l'accident survenu à un assuré <strong>par le fait ou à l'occasion du service</strong>. Est <strong>assimilé</strong> à un accident du travail :<ul><li>L'accident survenu <strong>pendant le trajet</strong> de la résidence au lieu de travail et vice versa, dans la mesure où le parcours n'a pas été interrompu ou détourné par un motif dicté par l'intérêt personnel ou indépendant de l'emploi ;</li><li>L'accident survenu pendant les <strong>voyages dont les frais sont à la charge de l'employeur</strong>.</li></ul>Cette branche assure la <strong>prise en charge médicale</strong>, la <strong>rééducation fonctionnelle</strong> et la <strong>réinsertion professionnelle</strong> des victimes. Elle verse des <strong>indemnités journalières</strong>, donne droit à un <strong>capital ou une rente d'invalidité</strong> en cas de réduction définitive de la capacité de travail, verse une <strong>rente aux ayants droit</strong> de la victime décédée, et met en œuvre une <strong>stratégie de prévention</strong>."
+  },
+  "allocations_prenatales": {
+    tag: "CNPS · Prestations familiales",
+    answer: "Les <strong>allocations prénatales</strong> sont dues à toute <strong>femme agent de l'État ou conjointe d'un agent de l'État</strong>, à compter du jour où l'état de grossesse est déclaré et <strong>jusqu'à l'accouchement</strong>. Si cette déclaration, accompagnée d'un <strong>certificat médical</strong>, est adressée à la CNPS dans les <strong>trois premiers mois</strong> de la grossesse, les allocations sont dues pour les <strong>neuf mois précédant la naissance</strong>. Pour en bénéficier, la femme enceinte doit subir des <strong>visites médicales et obstétricales périodiques</strong> avant le <strong>troisième mois</strong> et le <strong>huitième mois</strong> de grossesse ; ces examens sont constatés sur le volet correspondant du <strong>carnet de grossesse et de maternité</strong>."
+  },
+  "allocations_maternite": {
+    tag: "CNPS · Prestations familiales",
+    answer: "Les <strong>allocations post-natales ou de maternité</strong> sont dues à toute femme assurée ou conjointe d'un assuré de la CNPS qui donne naissance, <strong>sous contrôle médical</strong>, à un <strong>enfant né viable</strong>. L'allocation est payable en <strong>trois fractions</strong> :<ul><li>La <strong>moitié</strong> à la naissance ou immédiatement après la demande ;</li><li>Un <strong>quart</strong> lorsque l'enfant atteint l'âge de <strong>six mois</strong> ;</li><li>Le dernier <strong>quart</strong> lorsque l'enfant atteint l'âge de <strong>douze mois</strong>.</li></ul>En cas de <strong>naissance multiple</strong>, chaque naissance est considérée comme une <strong>maternité distincte</strong>."
+  },
+  "allocations_familiales": {
+    tag: "CNPS · Prestations familiales",
+    answer: "Les <strong>allocations familiales</strong> sont attribuées aux assurés de la CNPS pour <strong>chacun des enfants à charge</strong>, âgé de <strong>plus d'un an</strong> et de <strong>moins de 18 ans</strong>. La limite d'âge est portée à <strong>21 ans</strong> pour l'enfant placé en apprentissage, celui qui poursuit des études, ou en cas d'infirmité ou de maladie incurable le rendant incapable d'exercer toute activité génératrice de revenu.<br><br>Leur paiement est subordonné à : un <strong>minimum d'activité professionnelle</strong>, la <strong>régularité de la fréquentation scolaire</strong>, l'<strong>inscription à l'état civil</strong> et la <strong>consultation médicale</strong> de l'enfant. Elles sont payées à l'allocataire <strong>à terme échu</strong>, à intervalle régulier ne dépassant pas <strong>trois mois</strong>."
+  },
+  "indemnites_maternite": {
+    tag: "CNPS · Prestations familiales",
+    answer: "Les <strong>indemnités journalières de congé de maternité</strong> sont dues à la <strong>femme assurée en couche</strong> pendant la durée du congé de maternité, et payées pour une période de <strong>seize (16) semaines</strong>."
+  },
+  "branche_maladie": {
+    tag: "CNPS · Maladie",
+    answer: "Les prestations de la <strong>branche maladie</strong> couvrent les <strong>soins médicaux</strong> et les <strong>indemnités de maladie</strong>.<br><br><strong>Les soins médicaux</strong> — sont garantis : les <strong>frais médicaux, pharmaceutiques et d'hospitalisation</strong> ; les montants payés aux fournisseurs de soins et de médicaments dans la limite des <strong>tarifs conventionnés</strong>, à concurrence de <strong>80 % des frais engagés</strong>. Les <strong>20 % restants</strong> constituent le <strong>ticket modérateur</strong>, c'est-à-dire la participation de l'assuré qui reste à sa charge.<br><br><strong>Les indemnités de maladie</strong> — durant la période de maladie de l'assuré, c'est l'<strong>employeur</strong> qui assure le paiement de son salaire pour compenser les pertes de revenus."
+  },
+  "conventionnement": {
+    tag: "CNPS · Maladie",
+    answer: "Dans le cadre de l'exercice de ses missions, la CNPS est habilitée à <strong>signer des conventions avec les prestataires de soins et de services de santé</strong>. Les règles régissant ces conventions sont fixées par <strong>décision du Conseil d'Administration</strong>, sur proposition du <strong>Directeur Général</strong>.<br><br>Grâce à son <strong>action sociale</strong>, la CNPS favorise également l'<strong>accès à la santé des plus démunis</strong> et contribue au fonctionnement d'<strong>établissements médico-sociaux</strong>."
   }
 };
 
@@ -548,17 +619,36 @@ const keywords = {
   autres_conventions: ["convention 121", "convention 128", "convention 130", "convention 183", "c121", "c128", "c130", "c183", "recommandation 67", "recommandation 69", "maternite", "autres conventions"],
   socle: ["socle", "socles de protection", "recommandation 202", "r202", "couverture universelle"],
   aiss: ["aiss", "association internationale de la securite sociale", "issa", "lignes directrices", "bonnes pratiques"],
-  cipres: ["cipres", "conference interafricaine", "organisation regionale", "traite d abidjan", "lome"]
+  cipres: ["cipres", "conference interafricaine", "organisation regionale", "traite d abidjan", "lome"],
+  cnps_presentation: ["cnps", "qu est ce que la cnps", "caisse nationale de prevoyance", "creation de la cnps", "decret 0263", "cnpsae", "inamo", "fusion", "statut de la cnps", "tutelle"],
+  cnps_organisation: ["organisation", "conseil d administration", "direction generale", "organes", "organe d execution", "supervision"],
+  cnps_missions: ["mission", "attributions", "role de la cnps", "branches gerees", "que fait la cnps"],
+  cnps_champ: ["champ d application", "qui est couvert", "beneficiaires", "categories couvertes", "fonctionnaires", "contractuels", "collectivites locales"],
+  cnps_financement: ["financement", "sources de financement", "cotisations obligatoires", "dons et legs", "majorations", "interets moratoires", "revenus des placements", "ressources"],
+  pension_vieillesse: ["pension de vieillesse", "pension de retraite", "conditions de retraite", "droit a pension", "15 ans", "quinze ans", "partir a la retraite"],
+  pension_calcul: ["calcul de la pension", "montant de la pension", "formule", "indice", "point d indice", "taux d accumulation", "comment est calculee"],
+  allocations_retraite: ["allocations du retraite", "allocations familiales du retraite", "10 enfants", "dix enfants"],
+  pension_invalidite: ["invalidite", "pension d invalidite", "invalide", "inapte", "5 ans de cotisation", "cinq ans"],
+  pension_survivants: ["survivants", "pension de survivants", "reversion", "conjoint survivant", "veuve", "50%", "50 %"],
+  pension_orphelin: ["orphelin", "pension d orphelin", "enfants du defunt", "de cujus", "10%", "10 %"],
+  risques_professionnels: ["risques professionnels", "accident du travail", "maladie professionnelle", "accident de trajet", "rente d invalidite", "reeducation", "reinsertion", "prevention"],
+  allocations_prenatales: ["allocations prenatales", "prenatale", "grossesse", "declaration de grossesse", "carnet de grossesse"],
+  allocations_maternite: ["allocations de maternite", "post natales", "postnatales", "naissance", "trois fractions", "enfant ne viable"],
+  allocations_familiales: ["allocations familiales", "enfants a charge", "fréquentation scolaire", "frequentation scolaire", "terme echu"],
+  indemnites_maternite: ["indemnites journalieres", "conge de maternite", "seize semaines", "16 semaines"],
+  branche_maladie: ["branche maladie", "assurance maladie", "soins medicaux", "ticket moderateur", "80%", "80 %", "20%", "20 %", "hospitalisation", "frais medicaux"],
+  conventionnement: ["conventionnement", "convention", "prestataires de soins", "action sociale", "etablissements medico-sociaux"]
 };
 
 const initialSuggestions = [
+  "Qu'est-ce que la CNPS ?",
+  "Les missions de la CNPS",
+  "Qui est couvert par la CNPS ?",
+  "La pension de retraite",
+  "Les prestations familiales",
+  "La branche maladie",
   "Qu'est-ce que la protection sociale ?",
-  "Les modèles de Bismarck et de Beveridge",
-  "L'OIT et le tripartisme",
-  "La Convention n° 102 de l'OIT",
-  "Les 9 branches de la sécurité sociale",
-  "L'AISS",
-  "La CIPRES"
+  "Les modèles de Bismarck et de Beveridge"
 ];
 
 
@@ -587,14 +677,32 @@ const topicSuggestions = {
   autres_conventions: ["La Convention n° 102 de l'OIT", "Les socles de protection sociale"],
   socle: ["La Convention n° 102 de l'OIT", "L'AISS", "La CIPRES"],
   aiss: ["L'OIT et le tripartisme", "La CIPRES", "La Convention n° 102"],
-  cipres: ["L'AISS", "L'OIT et le tripartisme", "Qu'est-ce que la protection sociale ?"]
+  cipres: ["L'AISS", "L'OIT et le tripartisme", "Qu'est-ce que la protection sociale ?"],
+  cnps_presentation: ["Les missions de la CNPS", "L'organisation de la CNPS", "Qui est couvert par la CNPS ?"],
+  cnps_organisation: ["Qu'est-ce que la CNPS ?", "Les missions de la CNPS", "Le financement de la CNPS"],
+  cnps_missions: ["Qui est couvert par la CNPS ?", "Le financement de la CNPS", "La pension de retraite"],
+  cnps_champ: ["Les missions de la CNPS", "La pension de retraite", "Les prestations familiales"],
+  cnps_financement: ["Les missions de la CNPS", "Qu'est-ce que la CNPS ?", "Les prestations servies"],
+  pension_vieillesse: ["Le calcul de la pension", "Les allocations du retraité", "La pension d'invalidité"],
+  pension_calcul: ["La pension de retraite", "Les allocations du retraité", "La pension de survivants"],
+  allocations_retraite: ["La pension de retraite", "Les allocations familiales", "Le calcul de la pension"],
+  pension_invalidite: ["La pension de retraite", "La pension de survivants", "Les risques professionnels"],
+  pension_survivants: ["La pension d'orphelin", "La pension de retraite", "La pension d'invalidité"],
+  pension_orphelin: ["La pension de survivants", "Les allocations familiales"],
+  risques_professionnels: ["La pension d'invalidité", "La branche maladie", "Les missions de la CNPS"],
+  allocations_prenatales: ["Les allocations de maternité", "Les indemnités de congé de maternité", "Les allocations familiales"],
+  allocations_maternite: ["Les allocations prénatales", "Les indemnités de congé de maternité", "Les allocations familiales"],
+  allocations_familiales: ["Les allocations de maternité", "Les allocations du retraité", "Les allocations prénatales"],
+  indemnites_maternite: ["Les allocations de maternité", "Les allocations prénatales", "La branche maladie"],
+  branche_maladie: ["Le conventionnement", "Les risques professionnels", "Les missions de la CNPS"],
+  conventionnement: ["La branche maladie", "Les missions de la CNPS"]
 };
 
 function findAnswer(input) {
   const q = normalize(input);
 
   if (/^(bonjour|salut|bonsoir|hello|bsr|bjr)[\s!.,]*$/.test(q)) {
-    return { tag: null, answer: "Bonjour ! Je suis l'assistant de cette formation. Posez-moi vos questions sur les <strong>fondements de la sécurité sociale</strong> : origines, modèles de Bismarck et de Beveridge, OIT, AISS, CIPRES…", suggestions: initialSuggestions.slice(0, 6) };
+    return { tag: null, answer: "Bonjour ! Je suis l'assistant de formation de la <strong>CNPS Guinée</strong>. Posez-moi vos questions sur l'institution, ses prestations, ou sur les fondements de la protection sociale.", suggestions: initialSuggestions.slice(0, 6) };
   }
   if (q.includes("merci")) {
     return { tag: null, answer: "Avec plaisir ! N'hésitez pas si vous avez d'autres questions.", suggestions: initialSuggestions.slice(0, 4) };
@@ -624,7 +732,7 @@ function findAnswer(input) {
   return {
     tag: null,
     answer: "Je n'ai pas de réponse précise sur ce point. Essayez de reformuler ou choisissez un thème ci-dessous :",
-    suggestions: ["Qu'est-ce que la protection sociale ?", "Les modèles de Bismarck et de Beveridge", "L'OIT et le tripartisme", "La Convention n° 102 de l'OIT", "L'AISS", "La CIPRES"]
+    suggestions: ["Qu'est-ce que la CNPS ?", "Les missions de la CNPS", "La pension de retraite", "Les prestations familiales", "La branche maladie", "Qu'est-ce que la protection sociale ?"]
   };
 }
 
@@ -715,7 +823,73 @@ const quizQuestions = [
     ans: 2, expl: "La <strong>CIPRES</strong> (Conférence Interafricaine de la Prévoyance Sociale) regroupe 17 États africains francophones, dont la Guinée." },
   { mod: "m2", q: "Quand et où le traité créant la CIPRES a-t-il été signé ?",
     opts: ["À Lomé, en 1995", "À Abidjan, le 21 septembre 1993", "À Conakry, en 2012", "À Dakar, en 1989"],
-    ans: 1, expl: "Le traité créant la CIPRES a été signé à <strong>Abidjan le 21 septembre 1993</strong> et est entré en vigueur en 1995. Son siège est à <strong>Lomé</strong> (Togo)." }
+    ans: 1, expl: "Le traité créant la CIPRES a été signé à <strong>Abidjan le 21 septembre 1993</strong> et est entré en vigueur en 1995. Son siège est à <strong>Lomé</strong> (Togo)." },
+  { mod: "m3", q: "Par quel texte la CNPS a-t-elle été créée ?",
+    opts: ["Le décret 0263 du 31 mai 2022", "La loi de finances 2014", "Le décret 354 de 1963", "L'arrêté ministériel de 2020"],
+    ans: 0, expl: "La CNPS a été créée par le <strong>décret 0263 du 31 mai 2022</strong>, suite à la fusion de la CNPSAE et de l'INAMO." },
+  { mod: "m3", q: "De la fusion de quels organismes la CNPS est-elle née ?",
+    opts: ["La CNSS et l'INAMO", "La CNPSAE et l'INAMO", "La CNPSAE et la CNSS", "L'INAMO et la Caisse de retraite"],
+    ans: 1, expl: "La CNPS est née de la fusion de la <strong>Caisse Nationale de Prévoyance Sociale des Agents de l'État (CNPSAE)</strong> et de l'<strong>Institut National d'Assurance Maladie Obligatoire (INAMO)</strong>." },
+  { mod: "m3", q: "Quel est le statut juridique de la CNPS ?",
+    opts: ["Société anonyme d'État", "Établissement public administratif", "Association d'utilité publique", "Direction ministérielle"],
+    ans: 1, expl: "La CNPS est un <strong>établissement public administratif</strong> doté de la personnalité morale et jouissant de l'autonomie financière et de gestion." },
+  { mod: "m3", q: "Sous quelle tutelle technique la CNPS est-elle placée ?",
+    opts: ["Le Ministère chargé des finances", "Le Ministère chargé de la protection sociale", "Le Ministère de la santé", "La Primature"],
+    ans: 1, expl: "La CNPS est placée sous la <strong>tutelle technique du Ministère chargé de la protection sociale</strong> et sous la <strong>tutelle financière du Ministère chargé des finances</strong>." },
+  { mod: "m3", q: "Quel organe de la CNPS est l'organe de supervision, d'orientation et de décision ?",
+    opts: ["La Direction Générale", "Le Conseil d'Administration", "L'Agence comptable", "Le Contrôleur financier"],
+    ans: 1, expl: "Le <strong>Conseil d'Administration</strong> est l'organe de supervision, d'orientation et de décision ; la <strong>Direction Générale</strong> est l'organe d'exécution." },
+  { mod: "m3", q: "Laquelle de ces branches n'est PAS gérée par la CNPS ?",
+    opts: ["La branche des pensions", "La branche des risques professionnels", "La branche chômage", "La branche maladie"],
+    ans: 2, expl: "La CNPS gère quatre branches : <strong>pensions</strong> (vieillesse, invalidité, survivants), <strong>risques professionnels</strong>, <strong>prestations familiales</strong> et <strong>maladie</strong>. Le chômage n'en fait pas partie." },
+  { mod: "m3", q: "Parmi ces catégories, laquelle est couverte par la CNPS ?",
+    opts: ["Les salariés du secteur privé", "Les fonctionnaires des collectivités locales", "Les travailleurs indépendants", "Les étudiants"],
+    ans: 1, expl: "La CNPS couvre : les <strong>fonctionnaires de l'État</strong>, les <strong>contractuels de l'État</strong>, les <strong>fonctionnaires des collectivités locales</strong> (tous avec leurs ayants droit) et les <strong>retraités</strong>." },
+  { mod: "m3", q: "Laquelle de ces ressources ne figure PAS parmi les sources de financement de la CNPS ?",
+    opts: ["Les dons et legs", "Les revenus des placements", "Les recettes douanières", "Les majorations et intérêts moratoires"],
+    ans: 2, expl: "Les sources sont : les cotisations obligatoires (assurés, collectivités locales, État employeur), les dons et legs, les majorations et intérêts moratoires, les subventions éventuelles et les revenus des placements. Les recettes douanières n'en font pas partie." },
+  { mod: "m4", q: "Combien d'années d'activité soumise à cotisation faut-il au minimum pour bénéficier d'une pension de retraite ?",
+    opts: ["5 ans", "10 ans", "15 ans", "20 ans"],
+    ans: 2, expl: "Il faut avoir totalisé <strong>au moins 15 ans</strong> d'activité soumise à cotisation à la CNPS, avoir atteint la limite d'âge de sa hiérarchie et avoir cessé toute activité salariée dans la fonction publique." },
+  { mod: "m4", q: "Quelle est la formule de calcul de la pension de retraite ?",
+    opts: ["Salaire moyen × nombre d'années", "Indice × valeur du point d'indice × taux d'accumulation", "Dernier salaire × 2 % par année", "Cotisations versées ÷ espérance de vie"],
+    ans: 1, expl: "La formule est : <strong>Pension = Indice × valeur du point d'indice × taux d'accumulation</strong>. Le montant n'est pas fixe : il varie selon l'indice et la durée de l'emploi." },
+  { mod: "m4", q: "Les allocations familiales du retraité sont accordées pour un maximum de combien d'enfants ?",
+    opts: ["4 enfants", "6 enfants", "8 enfants", "10 enfants"],
+    ans: 3, expl: "Elles sont accordées pour un maximum de <strong>10 enfants</strong>, nés ou conçus avant le début de la retraite, jusqu'à 18 ans (ou 21 ans en apprentissage, études ou invalidité)." },
+  { mod: "m4", q: "Combien d'années de cotisation faut-il au minimum pour bénéficier d'une pension d'invalidité ?",
+    opts: ["3 ans", "5 ans", "10 ans", "15 ans"],
+    ans: 1, expl: "Il faut avoir cotisé <strong>au moins 5 ans</strong> auprès de la CNPS. L'invalidité doit résulter d'un accident ou d'une maladie d'origine <strong>non professionnelle</strong>." },
+  { mod: "m4", q: "Quel est le montant de la pension de réversion du conjoint survivant ?",
+    opts: ["25 % de la pension du défunt", "50 % de la pension du défunt", "75 % de la pension du défunt", "100 % de la pension du défunt"],
+    ans: 1, expl: "Le conjoint survivant a droit à une pension de réversion égale à <strong>50 %</strong> de la pension obtenue ou qu'aurait obtenue l'assuré décédé, augmentée le cas échéant de la moitié de la rente d'invalidité." },
+  { mod: "m4", q: "À combien s'élève la pension d'orphelin ?",
+    opts: ["5 % de la pension du défunt", "10 % de la pension du défunt", "25 % de la pension du défunt", "50 % de la pension du défunt"],
+    ans: 1, expl: "La pension d'orphelin est égale à <strong>10 %</strong> de la pension du défunt. Le total des pensions d'orphelins ne peut excéder le montant de la pension du défunt, et au-delà de dix ayants droit les parts sont réduites proportionnellement." },
+  { mod: "m4", q: "Un accident survenu sur le trajet domicile-travail est :",
+    opts: ["Jamais pris en charge", "Assimilé à un accident du travail si le parcours n'a pas été interrompu ou détourné pour un motif personnel", "Pris en charge uniquement si l'employeur l'autorise", "Traité comme une maladie professionnelle"],
+    ans: 1, expl: "L'accident de trajet est <strong>assimilé à un accident du travail</strong>, à condition que le parcours n'ait pas été interrompu ou détourné par un motif dicté par l'intérêt personnel ou indépendant de l'emploi." },
+  { mod: "m4", q: "Comment l'allocation de maternité est-elle versée ?",
+    opts: ["En une seule fois à la naissance", "En trois fractions : la moitié à la naissance, un quart à 6 mois, un quart à 12 mois", "Mensuellement pendant un an", "En deux fois : à la naissance et à un an"],
+    ans: 1, expl: "Elle est payable en <strong>trois fractions</strong> : la <strong>moitié</strong> à la naissance, un <strong>quart</strong> à six mois et le dernier <strong>quart</strong> à douze mois. En cas de naissance multiple, chaque naissance est une maternité distincte." },
+  { mod: "m4", q: "Dans quel délai la grossesse doit-elle être déclarée pour que les allocations prénatales couvrent les neuf mois précédant la naissance ?",
+    opts: ["Dans les trois premiers mois", "Dans les six premiers mois", "Avant le huitième mois", "Au moment de l'accouchement"],
+    ans: 0, expl: "Si la déclaration, accompagnée d'un certificat médical, est adressée à la CNPS dans les <strong>trois premiers mois</strong> de la grossesse, les allocations prénatales sont dues pour les <strong>neuf mois</strong> précédant la naissance." },
+  { mod: "m4", q: "Quelle est la durée des indemnités journalières de congé de maternité ?",
+    opts: ["12 semaines", "14 semaines", "16 semaines", "18 semaines"],
+    ans: 2, expl: "Les indemnités journalières de congé de maternité sont payées pour une période de <strong>seize (16) semaines</strong>." },
+  { mod: "m4", q: "À quel âge débute le droit aux allocations familiales pour un enfant à charge ?",
+    opts: ["Dès la naissance", "À partir d'un an", "À partir de 3 ans", "À partir de 6 ans"],
+    ans: 1, expl: "Les allocations familiales sont attribuées pour chaque enfant à charge âgé de <strong>plus d'un an</strong> et de <strong>moins de 18 ans</strong> (21 ans en apprentissage, études, ou en cas d'infirmité)." },
+  { mod: "m4", q: "Quel est le taux de prise en charge des frais médicaux par la branche maladie ?",
+    opts: ["60 % des frais engagés", "70 % des frais engagés", "80 % des frais engagés", "100 % des frais engagés"],
+    ans: 2, expl: "La prise en charge est de <strong>80 %</strong> des frais engagés dans la limite des tarifs conventionnés. Les <strong>20 %</strong> restants constituent le <strong>ticket modérateur</strong>, à la charge de l'assuré." },
+  { mod: "m4", q: "Qui assure le paiement du salaire de l'assuré durant sa période de maladie ?",
+    opts: ["La CNPS", "L'employeur", "Le Ministère des finances", "Une assurance privée"],
+    ans: 1, expl: "Durant la période de maladie de l'assuré, c'est l'<strong>employeur</strong> qui assure le paiement de son salaire pour compenser les pertes de revenus." },
+  { mod: "m4", q: "Qui fixe les règles régissant les conventions avec les prestataires de soins ?",
+    opts: ["Le Directeur Général seul", "Le Conseil d'Administration, sur proposition du Directeur Général", "Le Ministère de la santé", "Les prestataires eux-mêmes"],
+    ans: 1, expl: "Les règles sont fixées par <strong>décision du Conseil d'Administration</strong>, sur <strong>proposition du Directeur Général</strong>." }
 ];
 
 
@@ -867,7 +1041,7 @@ const COURSE = [
 <h3>À retenir</h3>
 <ul>
 <li>Pas de prestations durables sans <strong>recouvrement efficace des cotisations</strong> : c'est la condition de viabilité de toute caisse.</li>
-<li>Pour les agents de l'État guinéens, <strong>l'État employeur cotise à hauteur de 18 %</strong> des salaires de référence auprès de la CNPS ; l'<strong>employé cotise 5 %</strong> et le <strong>retraité 2 %</strong> au titre de l'assurance maladie (détail au module 3).</li>
+<li>À la CNPS, le financement repose sur des <strong>cotisations obligatoires</strong> versées par les assurés, les collectivités locales et l'<strong>État employeur</strong> — le détail des sources est présenté au <strong>module 3</strong>.</li>
 </ul>`
       },
       {
@@ -1035,6 +1209,127 @@ const COURSE = [
       }
     ]
   },
+  {
+    id: 'm3', icon: '🏢', title: "La CNPS : présentation et organisation",
+    desc: "L'institution : sa création, son statut, sa tutelle, son organisation administrative, ses missions, son champ d'application et ses sources de financement.",
+    lessons: [
+      {
+        id: 'm3l1', title: "Présentation et organisation administrative",
+        html: `<p><strong>Objectif de la leçon :</strong> connaître l'origine, le statut juridique, la tutelle et les organes de la CNPS.</p>
+<h3>Création et statut</h3>` + kb('cnps_presentation') + `
+<h3>L'organisation administrative</h3>` + kb('cnps_organisation') + `
+<h3>À retenir</h3>
+<ul>
+<li>Texte fondateur : <strong>décret 0263 du 31 mai 2022</strong> ;</li>
+<li>Née de la <strong>fusion CNPSAE + INAMO</strong> ;</li>
+<li>Statut : <strong>établissement public administratif</strong>, personnalité morale, autonomie financière et de gestion ;</li>
+<li>Double tutelle : <strong>technique</strong> (Ministère chargé de la protection sociale) et <strong>financière</strong> (Ministère chargé des finances) ;</li>
+<li>Deux organes : le <strong>Conseil d'Administration</strong> (supervision, orientation, décision) et la <strong>Direction Générale</strong> (exécution).</li>
+</ul>`
+      },
+      {
+        id: 'm3l2', title: "Missions et attributions",
+        html: `<p><strong>Objectif de la leçon :</strong> énoncer la mission de la CNPS et les branches qu'elle gère.</p>` + kb('cnps_missions') + `
+<h3>À retenir</h3>
+<ul>
+<li>La mission tient en une phrase : <strong>couvrir les agents de l'État et assimilés — en activité et à la retraite — ainsi que leurs ayants droit, contre les risques sociaux</strong> ;</li>
+<li>Quatre branches à mémoriser : <strong>pensions</strong> (vieillesse, invalidité, survivants), <strong>risques professionnels</strong>, <strong>prestations familiales</strong>, <strong>maladie</strong>.</li>
+</ul>`
+      },
+      {
+        id: 'm3l3', title: "Le champ d'application",
+        html: `<p><strong>Objectif de la leçon :</strong> identifier précisément les catégories de personnes couvertes par la CNPS.</p>` + kb('cnps_champ') + `
+<h3>À retenir</h3>
+<p>Retenez que la couverture s'étend, pour les trois premières catégories, <strong>aux ayants droit</strong> — la protection ne s'arrête donc pas à l'agent lui-même, mais s'étend à sa famille.</p>`
+      },
+      {
+        id: 'm3l4', title: "Les sources de financement",
+        html: `<p><strong>Objectif de la leçon :</strong> connaître les sept sources de financement des prestations de la CNPS.</p>` + kb('cnps_financement') + `
+<h3>À retenir</h3>
+<ul>
+<li>Les <strong>cotisations obligatoires</strong> viennent de <strong>trois côtés</strong> : les assurés (fonctionnaires, contractuels, retraités), les <strong>collectivités locales</strong> et l'<strong>État employeur</strong> ;</li>
+<li>Les <strong>majorations et intérêts moratoires</strong> sanctionnent les retards de versement — c'est à la fois une ressource et une incitation à la conformité ;</li>
+<li>S'y ajoutent des ressources non contributives : <strong>dons et legs</strong>, <strong>subventions</strong> éventuelles et <strong>revenus des placements</strong>.</li>
+</ul>`
+      }
+    ]
+  },
+  {
+    id: 'm4', icon: '💰', title: 'Les prestations servies par la CNPS',
+    desc: "Les prestations des quatre branches : pensions de vieillesse, d'invalidité et de survivants, risques professionnels, prestations familiales et branche maladie.",
+    lessons: [
+      {
+        id: 'm4l1', title: "La pension de vieillesse et son calcul",
+        html: `<p><strong>Objectif de la leçon :</strong> connaître les conditions d'ouverture du droit à pension, son mode de calcul et les allocations qui s'y ajoutent.</p>
+<h3>Les conditions du droit à pension</h3>` + kb('pension_vieillesse') + `
+<h3>Le calcul de la pension</h3>` + kb('pension_calcul') + `
+<h3>Les allocations familiales du retraité</h3>` + kb('allocations_retraite') + `
+<h3>À retenir</h3>
+<ul>
+<li><strong>Trois conditions cumulatives</strong> : limite d'âge atteinte + <strong>15 ans</strong> de cotisation + cessation de toute activité salariée ;</li>
+<li>La pension <strong>n'est pas un montant fixe</strong> : elle dépend de l'indice, de la valeur du point et du taux d'accumulation ;</li>
+<li>Allocations familiales du retraité : maximum <strong>10 enfants</strong>, jusqu'à <strong>18 ans</strong> (ou <strong>21 ans</strong> en apprentissage, études ou invalidité).</li>
+</ul>`
+      },
+      {
+        id: 'm4l2', title: "La pension d'invalidité",
+        html: `<p><strong>Objectif de la leçon :</strong> définir l'invalidité, ses conditions et ses règles de non-cumul.</p>` + kb('pension_invalidite') + `
+<h3>À retenir</h3>
+<ul>
+<li>L'invalidité relève d'une cause <strong>non professionnelle</strong> (sinon, c'est la branche des risques professionnels) ;</li>
+<li>Condition de stage : <strong>au moins 5 ans</strong> de cotisation (contre 15 ans pour la retraite) ;</li>
+<li><strong>Pas de cumul</strong> avec une rémunération d'activité ou une pension de retraite ; à l'âge de la retraite, elle est <strong>remplacée par une pension de retraite de même montant</strong>.</li>
+</ul>`
+      },
+      {
+        id: 'm4l3', title: "Les pensions de survivants et d'orphelin",
+        html: `<p><strong>Objectif de la leçon :</strong> connaître les droits du conjoint survivant et des orphelins.</p>
+<h3>La pension de survivants</h3>` + kb('pension_survivants') + `
+<h3>La pension d'orphelin</h3>` + kb('pension_orphelin') + `
+<h3>À retenir</h3>
+<ul>
+<li>Conjoint survivant : <strong>50 %</strong> de la pension du défunt (plus, le cas échéant, la <strong>moitié de la rente d'invalidité</strong>) ;</li>
+<li>Orphelin : <strong>10 %</strong> par enfant, avec deux garde-fous — le total ne peut <strong>excéder la pension du défunt</strong>, et au-delà de <strong>dix ayants droit</strong> les parts sont <strong>réduites proportionnellement</strong>.</li>
+</ul>`
+      },
+      {
+        id: 'm4l4', title: "La branche des risques professionnels",
+        html: `<p><strong>Objectif de la leçon :</strong> définir l'accident du travail, les accidents assimilés et les prestations de cette branche.</p>` + kb('risques_professionnels') + `
+<h3>À retenir</h3>
+<ul>
+<li>Deux composantes : <strong>accidents du travail</strong> et <strong>maladies professionnelles</strong> ;</li>
+<li>L'<strong>accident de trajet</strong> est assimilé à un accident du travail — sauf si le parcours a été <strong>interrompu ou détourné</strong> pour un motif personnel ;</li>
+<li>Cette branche ne se limite pas à indemniser : elle <strong>répare</strong> (soins, rééducation, réinsertion), <strong>compense</strong> (indemnités journalières, capital ou rente, rente aux ayants droit) et <strong>prévient</strong>.</li>
+</ul>`
+      },
+      {
+        id: 'm4l5', title: "La branche des prestations familiales",
+        html: `<p><strong>Objectif de la leçon :</strong> connaître les quatre prestations familiales et leurs conditions.</p>
+<h3>1. Les allocations prénatales</h3>` + kb('allocations_prenatales') + `
+<h3>2. Les allocations post-natales ou de maternité</h3>` + kb('allocations_maternite') + `
+<h3>3. Les allocations familiales</h3>` + kb('allocations_familiales') + `
+<h3>4. Les indemnités journalières de congé de maternité</h3>` + kb('indemnites_maternite') + `
+<h3>À retenir</h3>
+<ul>
+<li>Prénatales : déclarer la grossesse dans les <strong>3 premiers mois</strong> ouvre droit aux <strong>9 mois</strong> précédant la naissance ;</li>
+<li>Maternité : versement en <strong>trois fractions</strong> (½ à la naissance, ¼ à 6 mois, ¼ à 12 mois) ;</li>
+<li>Allocations familiales : de <strong>1 an à 18 ans</strong> (21 ans en apprentissage, études ou infirmité), sous conditions de scolarité, d'état civil et de suivi médical ;</li>
+<li>Congé de maternité : <strong>16 semaines</strong> d'indemnités journalières.</li>
+</ul>`
+      },
+      {
+        id: 'm4l6', title: "La branche maladie et le conventionnement",
+        html: `<p><strong>Objectif de la leçon :</strong> connaître la couverture maladie, le ticket modérateur et le rôle du conventionnement.</p>` + kb('branche_maladie') + `
+<h3>Le conventionnement et l'action sociale</h3>` + kb('conventionnement') + `
+<h3>À retenir</h3>
+<ul>
+<li>Prise en charge à <strong>80 %</strong> dans la limite des <strong>tarifs conventionnés</strong> ; les <strong>20 %</strong> restants sont le <strong>ticket modérateur</strong> à la charge de l'assuré ;</li>
+<li>Les <strong>indemnités de maladie</strong> ne sont pas versées par la CNPS : c'est l'<strong>employeur</strong> qui maintient le salaire ;</li>
+<li>Les conventions avec les prestataires de soins sont fixées par <strong>décision du Conseil d'Administration</strong>, sur proposition du <strong>Directeur Général</strong>.</li>
+</ul>`
+      }
+    ]
+  }
 ];
 
 
@@ -1369,7 +1664,7 @@ function renderCert() {
     '<div class="cert-sub">Protection sociale &amp; CNPS Guinée</div>' +
     '<p>Ce certificat atteste que</p>' +
     '<div class="cert-name">' + (name ? name.replace(/</g, '&lt;') : '________________________') + '</div>' +
-    '<p>a suivi l\'intégralité de la formation <strong>« Les fondements de la sécurité sociale »</strong> — ' + COURSE.length + ' modules, ' + total + ' leçons (origines et modèles de la protection sociale, normes internationales OIT/AISS, organisation régionale CIPRES) — et a réussi l\'examen final de connaissances.</p>' +
+    '<p>a suivi l\'intégralité de la formation <strong>« Protection Sociale &amp; Caisse Nationale de Prévoyance Sociale de la République de Guinée »</strong> — ' + COURSE.length + ' modules, ' + total + ' leçons (fondements de la protection sociale, normes internationales OIT/AISS/CIPRES, institution CNPS et prestations servies) — et a réussi l\'examen final de connaissances.</p>' +
     '<div class="cert-score">Résultat : ' + exam.pct + ' % — Mention ' + certMention(exam.pct) + '</div>' +
     '<div class="cert-seal">🎓</div>' +
     '<div class="cert-footer">' +
