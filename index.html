@@ -543,11 +543,15 @@ let knowledge = {
   },
   "cnps_champ": {
     tag: "CNPS Guinée",
-    answer: "La CNPS couvre les catégories de personnes suivantes :<ul><li>Les <strong>Fonctionnaires de l'État</strong> et leurs ayants droit ;</li><li>Les <strong>Contractuels de l'État</strong> et leurs ayants droit ;</li><li>Les <strong>fonctionnaires des Collectivités locales</strong> et leurs ayants droit ;</li><li>Les <strong>Retraités</strong>.</li></ul>"
+    answer: "La CNPS assure la couverture, contre les risques sociaux, des catégories suivantes :<ul><li>Les <strong>Fonctionnaires de l'État</strong> et leurs ayants droit ;</li><li>Les <strong>Contractuels de l'État</strong> et leurs ayants droit ;</li><li>Les <strong>militaires</strong> ;</li><li>Les <strong>magistrats</strong> ;</li><li>Les <strong>fonctionnaires et contractuels des Collectivités locales</strong> et leurs ayants droit ;</li><li>Les <strong>Retraités</strong>.</li></ul>"
   },
   "cnps_financement": {
     tag: "CNPS Guinée",
-    answer: "Les prestations servies par la CNPS sont financées par :<ul><li>Les <strong>cotisations obligatoires</strong> des fonctionnaires, des contractuels et des retraités ;</li><li>Les <strong>cotisations obligatoires des collectivités locales</strong> ;</li><li>Les <strong>cotisations obligatoires de l'État employeur</strong> ;</li><li>Les <strong>dons et legs</strong> ;</li><li>Les <strong>majorations et intérêts moratoires</strong> encourus pour retard dans le versement des cotisations ;</li><li>Éventuellement, les <strong>subventions</strong> et contributions exceptionnelles au titre du budget général de l'État, et toutes autres ressources attribuées par un texte législatif ou réglementaire ;</li><li>Les <strong>revenus des placements</strong>.</li></ul>"
+    answer: "Les prestations servies par la CNPS sont financées par :<ul><li>Les <strong>cotisations obligatoires</strong> des fonctionnaires, des contractuels, des militaires, des magistrats et des retraités ;</li><li>Les <strong>cotisations obligatoires des collectivités locales</strong> ;</li><li>Les <strong>cotisations obligatoires de l'État employeur</strong> ;</li><li>Les <strong>dons et legs</strong> ;</li><li>Les <strong>majorations et intérêts moratoires</strong> encourus pour retard dans le versement des cotisations ;</li><li>Éventuellement, les <strong>subventions</strong> et contributions exceptionnelles au titre du budget général de l'État, et toutes autres ressources attribuées par un texte législatif ou réglementaire ;</li><li>Les <strong>revenus des placements</strong>.</li></ul>Les <strong>taux de cotisation</strong> sont détaillés dans la fiche dédiée."
+  },
+  "cotisations_taux": {
+    tag: "CNPS Guinée",
+    answer: "Les <strong>taux de cotisation</strong> à la CNPS sont les suivants :<ul><li><strong>Part employeur : 18 %</strong></li><li><strong>Part employé : 5 %</strong></li><li><strong>Part retraité : 2 %</strong>, au titre de l'<strong>assurance maladie</strong></li></ul>"
   },
   "pension_vieillesse": {
     tag: "CNPS · Pensions",
@@ -625,6 +629,7 @@ const keywords = {
   cnps_missions: ["mission", "attributions", "role de la cnps", "branches gerees", "que fait la cnps"],
   cnps_champ: ["champ d application", "qui est couvert", "beneficiaires", "categories couvertes", "fonctionnaires", "contractuels", "collectivites locales"],
   cnps_financement: ["financement", "sources de financement", "cotisations obligatoires", "dons et legs", "majorations", "interets moratoires", "revenus des placements", "ressources"],
+  cotisations_taux: ["taux de cotisation", "part employeur", "part employe", "part retraite", "combien cotise", "18%", "18 %", "5%", "5 %", "2%", "2 %", "taux"],
   pension_vieillesse: ["pension de vieillesse", "pension de retraite", "conditions de retraite", "droit a pension", "15 ans", "quinze ans", "partir a la retraite"],
   pension_calcul: ["calcul de la pension", "montant de la pension", "formule", "indice", "point d indice", "taux d accumulation", "comment est calculee"],
   allocations_retraite: ["allocations du retraite", "allocations familiales du retraite", "10 enfants", "dix enfants"],
@@ -682,7 +687,8 @@ const topicSuggestions = {
   cnps_organisation: ["Qu'est-ce que la CNPS ?", "Les missions de la CNPS", "Le financement de la CNPS"],
   cnps_missions: ["Qui est couvert par la CNPS ?", "Le financement de la CNPS", "La pension de retraite"],
   cnps_champ: ["Les missions de la CNPS", "La pension de retraite", "Les prestations familiales"],
-  cnps_financement: ["Les missions de la CNPS", "Qu'est-ce que la CNPS ?", "Les prestations servies"],
+  cnps_financement: ["Les taux de cotisation", "Les missions de la CNPS", "Qu'est-ce que la CNPS ?"],
+  cotisations_taux: ["Les sources de financement", "Qui est couvert par la CNPS ?", "La pension de retraite"],
   pension_vieillesse: ["Le calcul de la pension", "Les allocations du retraité", "La pension d'invalidité"],
   pension_calcul: ["La pension de retraite", "Les allocations du retraité", "La pension de survivants"],
   allocations_retraite: ["La pension de retraite", "Les allocations familiales", "Le calcul de la pension"],
@@ -842,9 +848,9 @@ const quizQuestions = [
   { mod: "m3", q: "Laquelle de ces branches n'est PAS gérée par la CNPS ?",
     opts: ["La branche des pensions", "La branche des risques professionnels", "La branche chômage", "La branche maladie"],
     ans: 2, expl: "La CNPS gère quatre branches : <strong>pensions</strong> (vieillesse, invalidité, survivants), <strong>risques professionnels</strong>, <strong>prestations familiales</strong> et <strong>maladie</strong>. Le chômage n'en fait pas partie." },
-  { mod: "m3", q: "Parmi ces catégories, laquelle est couverte par la CNPS ?",
-    opts: ["Les salariés du secteur privé", "Les fonctionnaires des collectivités locales", "Les travailleurs indépendants", "Les étudiants"],
-    ans: 1, expl: "La CNPS couvre : les <strong>fonctionnaires de l'État</strong>, les <strong>contractuels de l'État</strong>, les <strong>fonctionnaires des collectivités locales</strong> (tous avec leurs ayants droit) et les <strong>retraités</strong>." },
+  { mod: "m3", q: "Parmi ces catégories, laquelle n'est PAS couverte par la CNPS ?",
+    opts: ["Les militaires", "Les magistrats", "Les salariés du secteur privé", "Les fonctionnaires des collectivités locales"],
+    ans: 2, expl: "La CNPS couvre les <strong>fonctionnaires et contractuels de l'État</strong>, les <strong>militaires</strong>, les <strong>magistrats</strong>, les agents des <strong>collectivités locales</strong> (avec leurs ayants droit) et les <strong>retraités</strong>. Les salariés du secteur privé relèvent de la CNSS." },
   { mod: "m3", q: "Laquelle de ces ressources ne figure PAS parmi les sources de financement de la CNPS ?",
     opts: ["Les dons et legs", "Les revenus des placements", "Les recettes douanières", "Les majorations et intérêts moratoires"],
     ans: 2, expl: "Les sources sont : les cotisations obligatoires (assurés, collectivités locales, État employeur), les dons et legs, les majorations et intérêts moratoires, les subventions éventuelles et les revenus des placements. Les recettes douanières n'en font pas partie." },
@@ -889,7 +895,16 @@ const quizQuestions = [
     ans: 1, expl: "Durant la période de maladie de l'assuré, c'est l'<strong>employeur</strong> qui assure le paiement de son salaire pour compenser les pertes de revenus." },
   { mod: "m4", q: "Qui fixe les règles régissant les conventions avec les prestataires de soins ?",
     opts: ["Le Directeur Général seul", "Le Conseil d'Administration, sur proposition du Directeur Général", "Le Ministère de la santé", "Les prestataires eux-mêmes"],
-    ans: 1, expl: "Les règles sont fixées par <strong>décision du Conseil d'Administration</strong>, sur <strong>proposition du Directeur Général</strong>." }
+    ans: 1, expl: "Les règles sont fixées par <strong>décision du Conseil d'Administration</strong>, sur <strong>proposition du Directeur Général</strong>." },
+  { mod: "m3", q: "Quel est le taux de cotisation de la part employeur à la CNPS ?",
+    opts: ["5 %", "10 %", "18 %", "25 %"],
+    ans: 2, expl: "Les taux de cotisation sont : <strong>part employeur 18 %</strong>, <strong>part employé 5 %</strong> et <strong>part retraité 2 %</strong> au titre de l'assurance maladie." },
+  { mod: "m3", q: "Quelle est la part de cotisation de l'employé à la CNPS ?",
+    opts: ["2 %", "5 %", "10 %", "18 %"],
+    ans: 1, expl: "L'employé cotise à hauteur de <strong>5 %</strong> ; l'employeur à <strong>18 %</strong> et le retraité à <strong>2 %</strong> pour l'assurance maladie." },
+  { mod: "m3", q: "À quel taux le retraité cotise-t-il, et pour quelle branche ?",
+    opts: ["Il ne cotise pas", "2 % pour l'assurance maladie", "5 % pour les pensions", "18 % pour toutes les branches"],
+    ans: 1, expl: "Le retraité cotise à hauteur de <strong>2 %</strong>, au titre de l'<strong>assurance maladie</strong>." }
 ];
 
 
@@ -1240,14 +1255,21 @@ const COURSE = [
         id: 'm3l3', title: "Le champ d'application",
         html: `<p><strong>Objectif de la leçon :</strong> identifier précisément les catégories de personnes couvertes par la CNPS.</p>` + kb('cnps_champ') + `
 <h3>À retenir</h3>
-<p>Retenez que la couverture s'étend, pour les trois premières catégories, <strong>aux ayants droit</strong> — la protection ne s'arrête donc pas à l'agent lui-même, mais s'étend à sa famille.</p>`
+<ul>
+<li>La couverture ne se limite pas aux fonctionnaires : elle englobe aussi les <strong>militaires</strong>, les <strong>magistrats</strong> et les agents des <strong>collectivités locales</strong> ;</li>
+<li>Elle s'étend aux <strong>ayants droit</strong> — la protection ne s'arrête donc pas à l'agent lui-même, mais bénéficie à sa famille ;</li>
+<li>Les <strong>retraités</strong> restent couverts après la fin de leur activité.</li>
+</ul>`
       },
       {
-        id: 'm3l4', title: "Les sources de financement",
-        html: `<p><strong>Objectif de la leçon :</strong> connaître les sept sources de financement des prestations de la CNPS.</p>` + kb('cnps_financement') + `
+        id: 'm3l4', title: "Le financement : sources et taux de cotisation",
+        html: `<p><strong>Objectif de la leçon :</strong> connaître les sources de financement des prestations de la CNPS et les taux de cotisation applicables.</p>
+<h3>Les sources de financement</h3>` + kb('cnps_financement') + `
+<h3>Les taux de cotisation</h3>` + kb('cotisations_taux') + `
 <h3>À retenir</h3>
 <ul>
-<li>Les <strong>cotisations obligatoires</strong> viennent de <strong>trois côtés</strong> : les assurés (fonctionnaires, contractuels, retraités), les <strong>collectivités locales</strong> et l'<strong>État employeur</strong> ;</li>
+<li>Les <strong>cotisations obligatoires</strong> viennent de <strong>trois côtés</strong> : les assurés (fonctionnaires, contractuels, militaires, magistrats, retraités), les <strong>collectivités locales</strong> et l'<strong>État employeur</strong> ;</li>
+<li>Retenez le triptyque des taux : <strong>18 % employeur · 5 % employé · 2 % retraité</strong> (assurance maladie) ;</li>
 <li>Les <strong>majorations et intérêts moratoires</strong> sanctionnent les retards de versement — c'est à la fois une ressource et une incitation à la conformité ;</li>
 <li>S'y ajoutent des ressources non contributives : <strong>dons et legs</strong>, <strong>subventions</strong> éventuelles et <strong>revenus des placements</strong>.</li>
 </ul>`
